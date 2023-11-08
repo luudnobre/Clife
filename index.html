@@ -71,10 +71,28 @@
 <body>
     <p> <span class="seta">&#8595;</span></p>
 </body>
+<style>
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* Proporção 16:9 (ajuste conforme necessário) */
+        height: 0;
+        overflow: hidden;
+    }
 
-
-
-
+    .video-container iframe, .video-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+</head>
+<body>
+<div class="video-container">
+    <iframe src="https://www.youtube.com/watch?v=o6SAy6Rfr98" frameborder="0" allowfullscreen></iframe>
+</div>
+</body>
 
 </body>
 </html>
